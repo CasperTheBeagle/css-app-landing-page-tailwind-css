@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-[#F6F6FB] w-screen h-screen">
-    <!-- Start Coding Here -->
     <nav class="flex flex-row justify-between bg-white h-[50px] px-10 mt-5 mx-5 rounded-2xl shadow-lg">
         <img src="./image/Group 1.svg" alt="" class="w-20">
         <div class="menu flex flex-row gap-10 items-center ">
@@ -90,5 +90,33 @@
         </div>
     </section>
 </body>
-
+    <footer class="font-[inter]  m-0 p-0 box-border bg-[#f7f6fb] flex flex-col justify-center items-center h-screen">
+    <div class=" flex flex-col items-center px-[120px] py-[80px] bg-white h-[666px] w-[1199px] border-none rounded-[24px]">
+      <h2 class="text-center font-bold text-5xl text-[#1A1A2C]">Get in Touch</h2>
+      <div class="flex flex-col h-[322px] w-[589px] gap-[20px]">
+        <div class="gap-4 flex flex-col">
+        <label class="text-[#5f5f76] text-[16px] " for="name">Name</label>
+        <input class=" border-[1px] border-[#E0E0ED] rounded-[12px] pl-[16px] p-3 hover:border-[#B5A9FF] focus:border-[#5E44FF]" type="text" id="name" placeholder="John Doe" />
+        </div>
+        <div class="gap-4 flex flex-col">
+        <label class="text-[#5f5f76] text-[16px] " for="email">Email</label>
+        <input class=" border-[1px] border-[#E0E0ED] rounded-[12px] pl-[16px] p-3 hover:border-[#B5A9FF] focus:border-[#5E44FF]" type="email" id="email" placeholder="John@example.com" />
+        </div>
+        <div class="gap-4 flex flex-col">
+        <label class="text-[#5f5f76] text-[16px] " for="message">Message</label>
+        <textarea class=" border-[1px] border-[#E0E0ED] rounded-[12px] pl-[16px] p-3 placeholder-gray-400 w-[589px] h-[102px] hover:border-[#B5A9FF] focus:border-[#5E44FF]" id="message" placeholder="Your message..."></textarea>
+        </div>
+        <button class="text-center text-white bg-[#1A1A2C] px-[9px] py-[4px] w-[589px] h-[58px] rounded-xl hover:bg-[#5F5F76] focus:bg-[#35354D] focus:border-[#5F5F76] foucs:rounded-[16px] focus:border-[2px]">Submit</button>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between gap-[37px] w-[1199px] h-[24px] mt-20">
+      <h2 class="text-[#5F5F76] text-[16px]  font-medium">Acme productivity app ©2024</h2>
+      <div class=" gap-[37px] text-[#1A1A2C] text-[16px] flex flex-row justify-between font-semibold">
+      <button class="hover:text-[#5E44FF] hover:underline">FAQ</button>
+      <button class="hover:text-[#5E44FF] hover:underline">Terms</button>
+      <button class="hover:text-[#5E44FF] hover:underline">Al Policy</button>
+      <button class="hover:text-[#5E44FF] hover:underline">Pricing</button>
+      </div>
+    </div>
+    </footer>
 </html>
